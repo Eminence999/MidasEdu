@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midas Information Technology | Home</title>
+  <link rel="icon" size= "16x16" type="image/jpg" href="LOGGO.PNG"> 
+  <style>
+    /* ===== Global Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e8f0ff, #ffffff);
+      color: #0a1931;
+    }
+
+    /* ===== Header ===== */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background-color: #0a1931;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .site-title {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    header img {
+      height: 55px;
+      width: auto;
+    }
+
+    .site-title h1 {
+      font-size: 1.7rem;
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
+    }
+
+    /* ===== Section Styles ===== */
+    section {
+      padding: 80px 10%;
+    }
+
+    /* ===== Home Section ===== */
+    #home {
+      text-align: center;
+      padding-top: 100px;
+      padding-bottom: 120px;
+      background: #f5f9ff;
+    }
+
+    #home .welcome {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #home img {
+      width: 120px;
+      height: auto;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+      color: #0a1931;
+      margin-bottom: 15px;
+    }
+
+    #home p {
+      font-size: 1.1rem;
+      color: #333;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== Courses Section ===== */
+    #courses {
+      background: #0a1931;
+      color: #fff;
+      border-radius: 0;
+      box-shadow: inset 0 0 25px rgba(255, 255, 255, 0.05);
+    }
+
+    #courses h2 {
+      text-align: center;
+      color: #ffffff;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    .course-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 0 5% 60px;
+    }
+
+    .course-box {
+      background: #112d4e;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      transition: 0.3s;
+      border: 1px solid #173b6c;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+
+    .course-box:hover {
+      transform: translateY(-8px);
+      background: #0e2a50;
+      border-color: #1e56a0;
+      box-shadow: 0 0 15px rgba(30, 86, 160, 0.5);
+    }
+
+    .course-box h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #fdfdfd;
+    }
+
+    .course-box p {
+      font-size: 0.9rem;
+      color: #b0c7e1;
+    }
+
+    /* ===== Contact Section ===== */
+    #contact {
+      background: #f8faff;
+      text-align: center;
+      padding: 80px 10%;
+    }
+
+    #contact h2 {
+      color: #0a1931;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-card {
+      background: #ffffff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-card h4 {
+      color: #1e56a0;
+      margin-bottom: 5px;
+    }
+
+    .contact-card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .contact-card a {
+      color: #1e56a0;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a1931;
+      color: #fff;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="site-title">
+      <img src="logo.png" alt="Midas Information Technology Logo">
+      <h1>Midas Information Technology</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="home_page.html">Exam</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Home Section ===== -->
+  <section id="home">
+    <div class="welcome">
+      <img src="logo.png" alt="Midas Logo">
+      <h2>Welcome to Midas Information Technology</h2>
+      <p>
+        We are dedicated to providing high-quality computer education and digital training.  
+        Learn practical computer skills from our certified instructors to build your confidence and career in the technology world.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Courses Section ===== -->
+  <section id="courses">
+    <h2>Our Computer Courses</h2>
+    <div class="course-container">
+      <div class="course-box"><h3>Computer Basics</h3><p>Learn the foundation of computer systems, usage, and key components.</p></div>
+      <div class="course-box"><h3>Microsoft Word</h3><p>Master document creation, formatting, and editing tools.</p></div>
+      <div class="course-box"><h3>Microsoft Excel</h3><p>Develop strong data analysis and spreadsheet management skills.</p></div>
+      <div class="course-box"><h3>Microsoft PowerPoint</h3><p>Design impactful presentations with animations and templates.</p></div>
+      <div class="course-box"><h3>HTML & CSS</h3><p>Build and style modern, responsive web pages from scratch.</p></div>
+      <div class="course-box"><h3>JavaScript</h3><p>Bring interactivity and logic to websites with JavaScript programming.</p></div>
+      <div class="course-box"><h3>Database Management</h3><p>Organize, manage, and access data efficiently with database tools.</p></div>
+      <div class="course-box"><h3>Computer Networking</h3><p>Understand network setup, maintenance, and troubleshooting.</p></div>
+      <div class="course-box"><h3>ICT & Internet</h3><p>Learn essential ICT skills, online tools, and safe internet usage.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-card">
+      <h4>Instructor 1: Uncle Abdulkadir</h4>
+      <p>Email: <a href="mailto:Jquadri30@gmail.com">Jquadri30@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h4>Instructor 2: Uncle Sadik</h4>
+      <p>Email: <a href="mailto:abbakarsirdeeyq@gmail.com">abbakarsirdeeyq@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <h4>Managing Director (CEO): Yahaya Olowookere</h4>
+      <p>Email: <a href="mailto:yahayaolawale66@gmail.com">yahayaolawale66@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    &copy; 2025 Midas Information Technology. All Rights Reserved.
+  </footer>
+</body>
+</html>
